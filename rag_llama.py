@@ -19,7 +19,7 @@ llm = LocalLLM(gpt4all_model)
 # Configurazione del retriever di Wikipedia con un user agent appropriato
 class WikipediaRetriever:
     def __init__(self):
-        self.wiki = Wikipedia(language='en', user_agent= "RAG_project/1.0 (nicoladesiena@outlook.it)")
+        self.wiki = Wikipedia(language='en', user_agent= "RAG_project/1.0 (youremail)")
 
     def retrieve(self, query):
         page = self.wiki.page(query)
